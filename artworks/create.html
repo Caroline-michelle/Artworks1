@@ -10,6 +10,7 @@
   <header class="site-header">
     <a href="../index.html" class="logo">🎨 Artworks Gallery</a>
     <div id="user-name" class="user-name"></div>
+    <button class="hamburger" id="hamburger" aria-label="Meny">☰</button>
     <nav class="main-nav">
         <a href="../index.html" id="logout-link">Logg ut</a>
     </nav>
@@ -70,5 +71,15 @@
   </footer>
   <script type="module" src="../js/auth.js"></script>
   <script type="module" src="../js/create.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const burger = document.getElementById("hamburger");
+      const nav = document.querySelector(".main-nav");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("show");
+      });
+    });
+  </script>
 </body>
 </html

@@ -449,3 +449,31 @@ textarea {
   font-size: 0.95rem;
   margin-top: 4rem;
 }
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #7c3aed;
+    padding: 1rem;
+    border-radius: 0 0 12px 12px;
+    width: 100%;
+  }
+
+  .main-nav.show {
+    display: flex;
+  }
+}
