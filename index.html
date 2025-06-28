@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artworks Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">🎨 Art Gallery</a>
+      <div id="user-name" class="user-name"></div>
+      <nav class="main-nav">
+        <a href="./account/login.html">Logg inn</a>
+        <a href="./account/register.html">Registrer</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="loading">Loading artworks...</div>
+      <div id="error-message" class="error"></div>
+      <div id="artworks-container" class="gallery"></div>
+    </main>
+    <script type="module" src="/js/auth.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
